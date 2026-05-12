@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: deadlock-app
+
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: deadlock
+
+  template:
+    metadata:
+      labels:
+        app: deadlock
+
+    spec:
+      containers:
+      - name: deadlock-container
+        image: samarthg14/deadlock-simulator:v2
+        imagePullPolicy: Always
+
+        ports:
+        - containerPort: 80

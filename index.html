@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadlock Detection Simulator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🖥 Deadlock Detection & Avoidance Simulator</h1>
+
+        <div class="student-info">
+            <p><strong>Name:</strong> Samarth Garg</p>
+            <p><strong>Student ID:</strong> 22</p>
+            <p><strong>Version:</strong> 1.0</p>
+        </div>
+
+        <div class="card">
+
+            <h2>Available Resources</h2>
+
+            <div class="resources">
+                <input type="number" id="resourceA" placeholder="Resource A">
+                <input type="number" id="resourceB" placeholder="Resource B">
+            </div>
+
+            <h2>Process Resource Requests</h2>
+
+            <div class="process">
+                <span>P1</span>
+                <input type="number" id="p1a" placeholder="A">
+                <input type="number" id="p1b" placeholder="B">
+            </div>
+
+            <div class="process">
+                <span>P2</span>
+                <input type="number" id="p2a" placeholder="A">
+                <input type="number" id="p2b" placeholder="B">
+            </div>
+
+            <div class="process">
+                <span>P3</span>
+                <input type="number" id="p3a" placeholder="A">
+                <input type="number" id="p3b" placeholder="B">
+            </div>
+
+            <button onclick="checkState()">
+                Check System State
+            </button>
+
+            <div id="result"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
